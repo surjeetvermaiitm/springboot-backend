@@ -36,3 +36,8 @@ java -jar build/libs/filename.jar
 
 The above command will execute your code
 
+Homework
+
+1. Run using gradle CLI
+2. Use retrofit in place of okHTTP for API call
+

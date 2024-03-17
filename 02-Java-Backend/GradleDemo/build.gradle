@@ -21,6 +21,11 @@ jar {
             'Main-Class': 'org.example.Main'
         )
     }
+    // Include dependencies in the JAR
+    from {
+        configurations.runtimeClasspath.collect { it.isDirectory() ? it : zipTree(it) }
+    }
+    duplicatesStrategy = DuplicatesStrategy.INCLUDE
 }
 
 
@@ -29,3 +34,4 @@ jar {
 test {
     useJUnitPlatform()
 }
+

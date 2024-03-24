@@ -26,7 +26,9 @@ public class TodoController {
     }
 
     @GetMapping()
-    public ResponseEntity<List<Todo>> getTodos(){
+    public ResponseEntity<List<Todo>> getTodos(
+            @RequestParam Boolean isCompleted
+    ){
         return ResponseEntity.ok(todosList);
     }
 

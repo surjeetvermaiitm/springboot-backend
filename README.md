@@ -12,3 +12,4 @@ Annotation
 6. Qualifier
 7. Autowired - Field injection
 8. @Scope 
+9. Test
